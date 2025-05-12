@@ -1,13 +1,25 @@
 
 /*************  CUSTOM PROPERTIES *************/
 :root {
-  --first-color: #ff6a00;
+  --font-family: "Poppins", sans-serif;
+  --accent-color: #bb0000;
+  --black-color: #111111;
+  --border-radius: 0.5em;
   --white-color: #ffffff;
-  --black-color:#000000;
-  --gray-light-color: #6E6E6E;
-  --border-color:#eaeaea;
-  --menu-gray-color:#f9f9fb;
-  --navbar-height: 70px;
+
+  --text-color: #111111;
+  --base-color: #ffffff;
+  --hover-color: #f0f0f0;
+  --line-color: #d3d3d3;
+  --secondary-text-color: #666666;
+}
+
+.dark-mode {
+  --text-color: #e6e6ef;
+  --base-color: #11121a;
+  --hover-color: #222533;
+  --line-color: #42434a;
+  --secondary-text-color: #b0b3c1;
 }
 /*************  RESET *************/
 
