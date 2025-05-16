@@ -1,8 +1,28 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
+import { useDispatch, useSelector } from "react-redux";
+// import React from "react";
+import { toggleTheme } from "./store/themeSlice";
+
+const useTheme = () => {
+  const theme = useSelector((state: any) => state.theme.theme); // Obtener el tema desde Redux
+  const dispatch = useDispatch();
+  const handleToggleTheme = () => dispatch(toggleTheme());
+
+  useEffect(() => {
+    document.body.className = theme; // Mantiene la aplicación del tema al body
+  }, [theme]);
+
+  return { theme, handleToggleTheme };
+};
+
+//export default useTheme;
+
+
 
 
 const Navbar: React.FC = () => {
+  const { theme, handleToggleTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [isDesktopMenuOpen, setIsDesktopMenuOpen] = useState(false);
@@ -44,7 +64,7 @@ const Navbar: React.FC = () => {
         ></div>
       )}
       {/*********** LOGO ****************/}
-      <nav className={styles.navbar}>
+      <nav className={`${styles.navbar} ${theme === "dark" ? styles.dark : styles.light}`}>
         <img
           className={styles.logoImg}
           width={32}
@@ -355,10 +375,10 @@ const Navbar: React.FC = () => {
                 ></i>
               </a>
               <a href="">
-                <i
-                  className="fa-solid fa-moon fa-lg"
-                  style={{ color: "#000000" }}
-                ></i>
+            <i
+              onClick={handleToggleTheme}
+              className={theme === "dark-mode" ? "fa-solid fa-sun" : "fa-solid fa-moon"}
+            ></i>
               </a>
             </div>
             <div className={styles.buttonContainer}>

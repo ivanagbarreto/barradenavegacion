@@ -4,14 +4,32 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    width: 100%;
     max-width: 1280;
     height: var(--navbar-height);
-    margin: 0 4rem;
+    
     z-index: 10;
     font-weight: bold;
-    background-color: var(--white-color);
+     background-color: var(--base-color);
+     color: var(--text-color);
     border-bottom: 1px solid var(--border-color);
   }
+ .light-mode{
+    --text-color: #111111;
+  --base-color: #ffffff;
+  --hover-color: #f0f0f0;
+  --line-color: #d3d3d3;
+  --secondary-text-color: #666666;
+}
+ 
+.dark-mode {
+  --text-color: #e6e6ef;
+  --base-color: #11121a;
+  --hover-color: #222533;
+  --line-color: #42434a;
+  --secondary-text-color: #b0b3c1;
+}
+
   .navbarLogo {
     margin: 0;
     padding: 0;
@@ -339,4 +357,3 @@
       height: auto;
     }
   }
-  
