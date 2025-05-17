@@ -14,21 +14,6 @@
      color: var(--text-color);
     border-bottom: 1px solid var(--border-color);
   }
- .light-mode{
-    --text-color: #111111;
-  --base-color: #ffffff;
-  --hover-color: #f0f0f0;
-  --line-color: #d3d3d3;
-  --secondary-text-color: #666666;
-}
- 
-.dark-mode {
-  --text-color: #e6e6ef;
-  --base-color: #11121a;
-  --hover-color: #222533;
-  --line-color: #42434a;
-  --secondary-text-color: #b0b3c1;
-}
 
   .navbarLogo {
     margin: 0;
@@ -160,8 +145,8 @@
     padding: 0.5rem 1rem;
     border: 2px solid var(--black-color);
     display: inline-block;
-    background-color: transparent;
-    color: var(--black-color);
+    background-color: var(--base-color);
+    color: var(--text-color);
     border-radius: 6px;
     cursor: pointer;
     font-size: 1rem;
@@ -172,14 +157,36 @@
   .buttonRegister {
     padding: 0.5rem 1rem;
     border: 2px solid var(--black-color);
-    background-color: var(--black-color);
-    color: var(--white-color);
+    background-color: var(--text-color);
+    color: var(--base-color);
     border-radius: 6px;
     cursor: pointer;
     font-size: 1rem;
     font-weight: bold;
     transition: 0.3s ease;
   }
+ 
+
+
+
+
+   .light-mode{
+    --text-color: #111111;
+  --base-color: #ffffff;
+  --hover-color: #f0f0f0;
+  --line-color: #d3d3d3;
+  --secondary-text-color: #666666;
+}
+ 
+.dark-mode {
+  --text-color: #e6e6ef;
+  --base-color: #11121a;
+  --hover-color: #222533;
+  --line-color: #42434a;
+  --secondary-text-color: #b0b3c1;
+}
+
+
   .chevronIcon {
     display: inline-block;
     margin-left: 0.5rem;
