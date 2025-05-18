@@ -371,7 +371,7 @@ const Navbar: React.FC = () => {
                 {" "}
                 <i
                   className="fa-solid fa-globe fa-lg"
-                  style={{ color: "#000000" }}
+                  
                 ></i>
               </a>
               <a href="">

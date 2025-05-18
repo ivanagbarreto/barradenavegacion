@@ -14,6 +14,9 @@
      color: var(--text-color);
     border-bottom: 1px solid var(--border-color);
   }
+  
+
+
 
   .navbarLogo {
     margin: 0;
@@ -78,10 +81,12 @@
     padding: 2rem;
     gap: 2rem;
     font-weight: lighter;
-    background-color: var(--menu-gray-color);
+    background-color: var(--base-color);
+    color:var(--text-color);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     z-index: 22;
   }
+
   .menuTitle {
     margin-left: 2rem;
     font-size: 1rem;
@@ -134,9 +139,28 @@
     display: flex;
     align-items: center;
     padding-right: 20px;
+  
     gap: 20px;
     cursor: pointer;
   }
+  .iconContainer > a >i{
+   color: var(--text-color);
+  }
+       .light-mode{
+    --text-color: #111111;
+  --base-color: #ffffff;
+  --hover-color: #f0f0f0;
+  --line-color: #d3d3d3;
+  --secondary-text-color: #666666;
+}
+ 
+.dark-mode {
+  --text-color: #e6e6ef;
+  --base-color: #11121a;
+  --hover-color: #222533;
+  --line-color: #42434a;
+  --secondary-text-color: #b0b3c1;
+}
   .buttonContainer {
     display: flex;
     gap: 1rem;
@@ -169,22 +193,6 @@
 
 
 
-
-   .light-mode{
-    --text-color: #111111;
-  --base-color: #ffffff;
-  --hover-color: #f0f0f0;
-  --line-color: #d3d3d3;
-  --secondary-text-color: #666666;
-}
- 
-.dark-mode {
-  --text-color: #e6e6ef;
-  --base-color: #11121a;
-  --hover-color: #222533;
-  --line-color: #42434a;
-  --secondary-text-color: #b0b3c1;
-}
 
 
   .chevronIcon {
