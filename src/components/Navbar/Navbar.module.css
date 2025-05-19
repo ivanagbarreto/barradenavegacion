@@ -146,21 +146,7 @@
   .iconContainer > a >i{
    color: var(--text-color);
   }
-       .light-mode{
-    --text-color: #111111;
-  --base-color: #ffffff;
-  --hover-color: #f0f0f0;
-  --line-color: #d3d3d3;
-  --secondary-text-color: #666666;
-}
- 
-.dark-mode {
-  --text-color: #e6e6ef;
-  --base-color: #11121a;
-  --hover-color: #222533;
-  --line-color: #42434a;
-  --secondary-text-color: #b0b3c1;
-}
+
   .buttonContainer {
     display: flex;
     gap: 1rem;
@@ -242,16 +228,21 @@
       width: 100%;
       height: calc(100vh - var(--navbar-height));
       padding: 1rem 2rem;
-      background-color: white;
+      background-color: var(--base-color);
+      color: var(--text-color);
       z-index: 999;
     }
+
+
+
     .navbarLinks {
       display: none;
       flex-direction: column;
       align-items: center;
       width: 100%;
       margin-top: 20px;
-      background-color: white;
+      background-color: var(--base-color);
+      color: var(--text-color);
     }
     .navbarLinks.active {
       display: flex;
