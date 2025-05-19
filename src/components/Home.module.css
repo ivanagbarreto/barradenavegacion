@@ -7,10 +7,15 @@
     justify-content: center; 
     align-items: center;    
     text-align: center;
+    background-color: var(--base-color);
   }
   .title {
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: var(--text-color);
+  }
+  p{
+    color: var(--text-color);
   }
   
   @media screen and (max-width: 768px) {
@@ -22,6 +27,6 @@
     .title {
         font-size: 2rem;
         margin-bottom: 1rem;
-        color: black;
+        
       }
   }
