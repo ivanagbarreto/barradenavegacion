@@ -9,7 +9,15 @@ const useTheme = () => {
   const handleToggleTheme = () => dispatch(toggleTheme());
 
   React.useEffect(() => {
-    document.body.className = theme;
+    
+    document.body.classList.add('theme-transition');
+    document.body.className = `${theme} theme-transition`;
+
+    const timeout = setTimeout(() => {
+      document.body.classList.remove('theme-transition');
+    }, 500); 
+
+    return () => clearTimeout(timeout); 
   }, [theme]);
 
   return { theme, handleToggleTheme };

@@ -8,6 +8,7 @@
     align-items: center;    
     text-align: center;
     background-color: var(--base-color);
+    transition: background-color 0.5s ease, color 0.5s ease;
   }
   .title {
     font-size: 2rem;

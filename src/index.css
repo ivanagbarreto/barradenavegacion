@@ -13,6 +13,7 @@
   --line-color: #d3d3d3;
   --secondary-text-color: #666666;
   --navbar-height:70px;
+    
 }
 
 .dark-mode {
@@ -42,7 +43,15 @@ body {
   overflow-x: hidden;
   color: black;
   font-family: 'Inter', sans-serif;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
+
+body.theme-transition {
+  transition: background-color 2s ease, color 3s ease;
+}
+
+
+
 /*************  HOME *************/
 .container {
   padding: 2rem;

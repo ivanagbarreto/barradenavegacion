@@ -12,11 +12,9 @@
     font-weight: bold;
      background-color: var(--base-color);
      color: var(--text-color);
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--line-color);
+    transition: background-color 0.5s ease, color 0.5s ease;
   }
-  
-
-
 
   .navbarLogo {
     margin: 0;
@@ -69,6 +67,7 @@
   .navItem:hover::after {
     opacity: 1;
   }
+
   /* ------------------ MENU ------------------------------------ */
   .megaMenu {
     position: fixed;
