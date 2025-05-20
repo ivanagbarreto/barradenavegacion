@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-// Leer el tema inicial desde localStorage o usar "light" como valor por defecto.
+
 const initialState = {
   theme: localStorage.getItem("theme") || "light-mode",
 };
@@ -12,7 +12,7 @@ const themeSlice = createSlice({
     toggleTheme: (state) => {
       const newTheme = state.theme === "light-mode" ? "dark-mode" : "light-mode";
       state.theme = newTheme;
-      localStorage.setItem("theme", newTheme); // Actualizar el tema en localStorage
+      localStorage.setItem("theme", newTheme); 
     },
     setTheme: (state, action) => {
       const newTheme = action.payload;

@@ -367,19 +367,19 @@ const Navbar: React.FC = () => {
           </ul>
           <div className={styles.rightContainer}>
             <div className={styles.iconContainer}>
-              <a href="">
+              
                 {" "}
                 <i
                   className="fa-solid fa-globe fa-lg"
                   
                 ></i>
-              </a>
-              <a href="">
+              
+              
             <i
               onClick={handleToggleTheme}
               className={theme === "dark-mode" ? "fa-solid fa-sun" : "fa-solid fa-moon"}
             ></i>
-              </a>
+              
             </div>
             <div className={styles.buttonContainer}>
               <button className={styles.buttonLogin}>Iniciar sesión</button>

@@ -23,6 +23,10 @@
   --line-color: #42434a;
   --secondary-text-color: #b0b3c1;
 }
+
+#root{
+  background-color:var(--base-color);
+}
 /*************  RESET *************/
 
 * {
