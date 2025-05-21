@@ -128,7 +128,7 @@
   margin-bottom: 1.5rem;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto auto;
-  align-items: center;
+  align-items: start;
   column-gap: 0.5rem;
 }
 .iconColumn {
