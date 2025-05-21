@@ -100,6 +100,8 @@ const Navbar: React.FC = () => {
               </span>
               {activeMenu === "productos" && (
                 <div className={styles.megaMenu}>
+                  
+                  <div className={styles.megaMenuContent}>
                   <h3 className={styles.menuTitle}>PRODUCTOS</h3>
                   <div className={styles.megaMenuColumns}>
                     <div className={styles.megaColumn}>
@@ -199,7 +201,10 @@ const Navbar: React.FC = () => {
                         </div>
                       </div>
                     </div>
+                  
                   </div>
+
+</div>
                 </div>
               )}
             </li>
