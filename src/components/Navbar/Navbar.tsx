@@ -223,6 +223,7 @@ const Navbar: React.FC = () => {
               </span>
               {activeMenu === "soluciones" && (
                 <div className={styles.megaMenu}>
+                  <div className={styles.megaMenuContent}>
                   <h3 className={styles.menuTitle}>SOLUCIONES</h3>
                   <div className={styles.megaMenuColumns}>
                     <div className={styles.megaColumn}>
@@ -266,6 +267,7 @@ const Navbar: React.FC = () => {
                     </div>
                   </div>
                 </div>
+                </div>
               )}
             </li>
             <li className={styles.navItem}>Business</li>
@@ -285,6 +287,7 @@ const Navbar: React.FC = () => {
               </span>
               {activeMenu === "recursos" && (
                 <div className={styles.megaMenu}>
+                  <div className={styles.megaMenuContent}>
                   <h3 className={styles.menuTitle}>RECURSOS</h3>
                   <div className={styles.megaMenuColumns}>
                     <div className={styles.megaColumn}>
@@ -359,13 +362,15 @@ const Navbar: React.FC = () => {
 
                         <div className={styles.textColumn}>
                           <h4>
-                            Programa de recompensas de vulnererabilidadess
+                            Programa de recompensas de vulnererabilidades
                           </h4>
                           <p>Conversaciones seguras y privadas</p>
                         </div>
                       </div>
                     </div>
                   </div>
+               </div>
+                
                 </div>
               )}
             </li>
