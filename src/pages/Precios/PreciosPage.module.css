@@ -1,0 +1,17 @@
+.containerPrecios{
+    padding: 2rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;    
+    text-align: center;
+    background-color: var(--base-color);
+    
+}
+
+.titlePrecios{
+     font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}

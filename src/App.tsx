@@ -2,8 +2,8 @@
 import Navbar from './components/Navbar/Navbar.tsx';
 import NavbarComp from './components/NavbarComp/NavbarComp.tsx';
 import { Routes, Route, NavLink } from 'react-router-dom';
-import BusinessPage from './BusinessPage';
-import PreciosPage from './PreciosPage';
+import BusinessPage from './pages/Business/BusinessPage.tsx';
+import PreciosPage from './pages/Precios/PreciosPage.tsx';
 import Home from './Home.tsx';
 import './index.css'; 
 
