@@ -1,6 +1,9 @@
 
 import Navbar from './components/Navbar/Navbar.tsx';
 import NavbarComp from './components/NavbarComp/NavbarComp.tsx';
+import { Routes, Route, NavLink } from 'react-router-dom';
+import BusinessPage from './BusinessPage';
+import PreciosPage from './PreciosPage';
 import Home from './Home.tsx';
 import './index.css'; 
 
@@ -13,7 +16,12 @@ function App() {
     
     <Navbar/>
     
-    <Home/>
+    
+     <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/business" element={<BusinessPage />} />
+      <Route path="/precios" element={<PreciosPage />} />
+    </Routes>
     </>
   );
 }

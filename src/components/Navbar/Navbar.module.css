@@ -158,6 +158,10 @@
   white-space: normal;
   
 }
+.active {
+  font-weight: bold;
+  color: #ff3366; /* o lo que quieras */
+}
 /*
 .menuItem h4 {
   margin: 0 0 0.3rem 0;

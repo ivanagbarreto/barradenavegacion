@@ -3,6 +3,7 @@ import styles from "./Navbar.module.css";
 import { useDispatch, useSelector } from "react-redux";
 // import React from "react";
 import { toggleTheme } from "./store/themeSlice";
+import { NavLink } from 'react-router-dom';
 
 const useTheme = () => {
   const theme = useSelector((state: any) => state.theme.theme); // Obtener el tema desde Redux
@@ -65,6 +66,7 @@ const Navbar: React.FC = () => {
       )}
       {/*********** LOGO ****************/}
       <nav className={`${styles.navbar} ${theme === "dark" ? styles.dark : styles.light}`}>
+        <NavLink to="/" className={styles.logoLink}>
         <img
           className={styles.logoImg}
           width={32}
@@ -72,6 +74,7 @@ const Navbar: React.FC = () => {
           src="https://mega.io/es/wp-content/themes/megapages/megalib/images/megaicon.svg"
           alt="MEGA Logo"
         />
+        </NavLink>
         {/*********** BOTON HAMBURGUESA ****************/}
         <div className={styles.menuIcon} onClick={toggleMenu}>
           {!menuOpen ? (
@@ -270,8 +273,9 @@ const Navbar: React.FC = () => {
                 </div>
               )}
             </li>
-            <li className={styles.navItem}>Business</li>
-            <li className={styles.navItem}>Precios</li>
+            <li className={styles.navItem}>  <NavLink to="/business">Business</NavLink></li>
+            <li className={styles.navItem}><NavLink to="/precios">Precios</NavLink></li>
+            
             <li
               className={styles.navItem}
               onClick={() => handleClick("recursos")}
