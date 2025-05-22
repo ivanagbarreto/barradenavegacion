@@ -158,9 +158,15 @@
   white-space: normal;
   
 }
-.active {
+.navLink {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.navLinkActive {
+  color: var(--text-color);
   font-weight: bold;
-  color: #ff3366; /* o lo que quieras */
+  text-decoration: none;
 }
 /*
 .menuItem h4 {
