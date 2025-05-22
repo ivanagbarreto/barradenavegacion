@@ -82,7 +82,7 @@
   width: 100%;
   left: 0;
   height: 50%;
-  
+
   align-items: center;
   gap: 2rem;
   font-weight: lighter;
@@ -137,14 +137,14 @@
 }
 .iconColumn {
   width: auto;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   flex-shrink: 0;
 }
 .textColumn h4 {
   margin-top: 0;
   margin-bottom: 0.3rem;
   font-size: 1rem;
-    max-width: 100%;
+  max-width: 100%;
   font-size: 14px;
   overflow-wrap: break-word;
   word-break: break-word;
@@ -156,17 +156,18 @@
   overflow-wrap: break-word;
   word-break: break-word;
   white-space: normal;
-  
 }
 .navLink {
   color: var(--text-color);
   text-decoration: none;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .navLinkActive {
   color: var(--text-color);
   font-weight: bold;
   text-decoration: none;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 /*
 .menuItem h4 {

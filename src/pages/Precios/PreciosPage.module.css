@@ -7,6 +7,10 @@
     align-items: center;    
     text-align: center;
     background-color: var(--base-color);
+    min-height: 100vh; /* Hace que ocupe toda la pantalla */
+ 
+  color: var(--text-color);
+  transition: background-color 0.5s ease, color 0.5s ease;
     
 }
 

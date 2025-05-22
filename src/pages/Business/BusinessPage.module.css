@@ -1,18 +1,19 @@
-.containerBusiness{
-    padding: 2rem;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;    
-    text-align: center;
-    background-color: var(--base-color);
-    
+.containerBusiness {
+  padding: 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--base-color);
+  min-height: 100vh;
+  color: var(--text-color);
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-.titleBusiness{
-     font-size: 2rem;
-    margin-bottom: 1rem;
-    color: var(--text-color);
+.titleBusiness {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
 }
-
