@@ -25,6 +25,7 @@
   margin: 0;
   padding: 0;
   align-self: center;
+ 
 }
 .menuIcon {
   display: none;
@@ -73,7 +74,7 @@
   opacity: 1;
 }
 
-/* ------------------ MENU ------------------------------------ */
+/* ------------------------------------- MENU ------------------------------------ */
 .megaMenu {
   position: fixed;
   display: flex;
@@ -82,9 +83,8 @@
   width: 100%;
   left: 0;
   height: 50%;
-
-  align-items: center;
-  gap: 2rem;
+  align-items: start;
+  margin-left: 0;
   font-weight: lighter;
   background-color: var(--base-color);
   color: var(--text-color);
@@ -92,6 +92,21 @@
   z-index: 22;
 }
 
+
+ /*-------------- MENU PRODUCTOS/RECURSOS - 4 COLUMNAS ---------*/
+.megaMenuColumns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 2rem 4rem;
+  left: 0;
+}
+ /*--------- MENU SOLUCIONES - 3 COLUMNAS ---------------------*/
+.megaMenuColumnsSoluciones {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 4rem;
+  left: 0;
+}
 .megaMenuContent {
   max-width: 1200px;
   margin: 0 auto;
@@ -101,40 +116,20 @@
 }
 
 .menuTitle {
-  margin: 1.5rem;
+  margin: 1.5rem 0rem;
   font-size: 1rem;
   font-weight: bold;
   color: var(--gray-light-color);
 }
-.megaMenuColumns {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin: 0 auto;
-  gap: 4rem;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  align-items: stretch;
-}
-.megaColumn {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  flex: 0 1 250px;
-  color: var(--gray-light-color);
-  flex: 1;
-  min-width: 220px;
-}
+
 .menuItem {
   display: grid;
-  margin-bottom: 1.5rem;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: auto auto;
+  grid-template-columns: auto 1fr; 
   align-items: start;
-  column-gap: 0.5rem;
-  flex-grow: 1;
+  left:0;
+  gap: 0.5rem;
 }
+
 .iconColumn {
   width: auto;
   margin-right: 0.5rem;
@@ -169,20 +164,7 @@
   text-decoration: none;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
-/*
-.menuItem h4 {
-  margin: 0 0 0.3rem 0;
-  font-size: 1rem;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-}
-.menuItem p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: var(--gray-light-color);
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-}*/
+
 /* ------------------ BOTONES ------------------------------------ */
 .iconContainer {
   display: flex;
@@ -278,7 +260,15 @@
     color: var(--text-color);
     z-index: 999;
   }
+  .megaMenuContent{
+    left: 0;
+    margin:0;
+    padding: 0;
+  }
 
+  .menuTitle{
+    margin: 0.5rem 0rem;
+  }
   .megaColumn {
     display: flex;
     flex-direction: column;
@@ -378,6 +368,7 @@
   .menuContainer.active {
     display: flex;
   }
+ 
   .menuContainer > *:not(.logoImg):not(.menuIcon) {
     display: none;
   }
