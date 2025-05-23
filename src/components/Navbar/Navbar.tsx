@@ -93,7 +93,7 @@ const Navbar: React.FC = () => {
               className={styles.navItem}
               onClick={() => handleClick("productos")}
             >
-              Productos
+              Products
               <span
                 className={`${styles.chevronIcon} ${
                   activeMenu === "productos" ? styles.chevronUp : ""
@@ -105,15 +105,15 @@ const Navbar: React.FC = () => {
               {activeMenu === "productos" && (
                 <div className={styles.megaMenu}>
                   <div className={styles.megaMenuContent}>
-                    <h3 className={styles.menuTitle}>PRODUCTOS</h3>
+                    <h3 className={styles.menuTitle}>Products</h3>
                     <div className={styles.megaMenuColumns}>
                       <div className={styles.menuItem}>
                         <div className={styles.iconColumn}>
                           <i className="fa-solid fa-cloud fa-lg"></i>
                         </div>
                         <div className={styles.textColumn}>
-                          <h4>Almacenamiento en la nube</h4>
-                          <p>Guarda tus archivos en un lugar seguro</p>
+                          <h4>Cloud storage</h4>
+                          <p>Keep your files in a safe place</p>
                         </div>
                       </div>
                       <div className={styles.menuItem}>
@@ -122,7 +122,7 @@ const Navbar: React.FC = () => {
                         </div>
                         <div className={styles.textColumn}>
                           <h4>VPN</h4>
-                          <p>Protege su privacidad en línea</p>
+                          <p>Protect your privacy online</p>
                         </div>
                       </div>
                       <div className={styles.menuItem}>
@@ -131,10 +131,9 @@ const Navbar: React.FC = () => {
                         </div>
 
                         <div className={styles.textColumn}>
-                          <h4>Gestor de contraseñas</h4>
+                          <h4>Password Manager</h4>
                           <p>
-                            Protege las contraseñas y accede a ellas en
-                            cualquier dispositivo
+                            Protect passwords and access them on any device
                           </p>
                         </div>
                       </div>
@@ -143,8 +142,8 @@ const Navbar: React.FC = () => {
                           <i className="fa-solid fa-comment fa-lg"></i>
                         </div>
                         <div className={styles.textColumn}>
-                          <h4>Chat y reuniones</h4>
-                          <p>Conversaciones seguras y privadas</p>
+                          <h4>Chat and meetings</h4>
+                          <p>Secure and private conversations</p>
                         </div>
                       </div>
 
@@ -153,8 +152,8 @@ const Navbar: React.FC = () => {
                           <i className="fa-solid fa-database fa-lg"></i>
                         </div>
                         <div className={styles.textColumn}>
-                          <h4>Almacenamiento de objetos</h4>
-                          <p>Almacenamiento expandible y compatible con S3</p>
+                          <h4>Object Storage</h4>
+                          <p>Expandable and S3-compatible storage</p>
                         </div>
                       </div>
                       <div className={styles.menuItem}>
@@ -163,7 +162,7 @@ const Navbar: React.FC = () => {
                         </div>
                         <div className={styles.textColumn}>
                           <h4>Backups</h4>
-                          <p>Haz un backup de tus archivos de forma segura</p>
+                          <p>Back up your files safely</p>
                         </div>
                       </div>
                       <div className={styles.menuItem}>
@@ -171,8 +170,8 @@ const Navbar: React.FC = () => {
                           <i className="fa-solid fa-repeat fa-lg"></i>
                         </div>
                         <div className={styles.textColumn}>
-                          <h4>Sincronizar</h4>
-                          <p>Sincroniza tus archivos con MEGA</p>
+                          <h4> Synchronize</h4>
+                          <p>Sync your files with MEGA</p>
                         </div>
                       </div>
                       <div className={styles.menuItem}>
@@ -180,8 +179,8 @@ const Navbar: React.FC = () => {
                           <i className="fa-solid fa-image fa-lg"></i>
                         </div>
                         <div className={styles.textColumn}>
-                          <h4>Archivos multimedia</h4>
-                          <p>Almacena y organiza tus archivos multimedia</p>
+                          <h4>Multimedia files</h4>
+                          <p>Store and organize your media files</p>
                         </div>
                       </div>
 
@@ -190,8 +189,8 @@ const Navbar: React.FC = () => {
                           <i className="fa-solid fa-arrow-up-from-bracket fa-lg"></i>
                         </div>
                         <div className={styles.textColumn}>
-                          <h4>Compartir</h4>
-                          <p>Comparte tus archivos con amigos</p>
+                          <h4>Share</h4>
+                          <p>Share your files with friends</p>
                         </div>
                       </div>
                     </div>
@@ -203,7 +202,7 @@ const Navbar: React.FC = () => {
               className={styles.navItem}
               onClick={() => handleClick("soluciones")}
             >
-              Soluciones
+              Solutions
               <span
                 className={`${styles.chevronIcon} ${
                   activeMenu === "soluciones" ? styles.chevronUp : ""
@@ -222,8 +221,8 @@ const Navbar: React.FC = () => {
                           <i className="fa-solid fa-face-smile fa-lg"></i>
                         </div>
                         <div className={styles.textColumn}>
-                          <h4>Particulares</h4>
-                          <p>Cuentas personales para usar a diario</p>
+                          <h4>Private users</h4>
+                          <p>Personal accounts for daily use</p>
                         </div>
                       </div>
 
@@ -232,9 +231,9 @@ const Navbar: React.FC = () => {
                           <i className="fa-solid fa-video fa-lg"></i>
                         </div>
                         <div className={styles.textColumn}>
-                          <h4>Autónomos</h4>
+                          <h4>Freelancers</h4>
                           <p>
-                            Creativos, contratistas, consultores y emprendedores
+                            Creatives, contractors, consultants, and entrepreneurs
                           </p>
                         </div>
                       </div>
@@ -244,10 +243,9 @@ const Navbar: React.FC = () => {
                           <i className="fa-solid fa-user-group fa-lg"></i>
                         </div>
                         <div className={styles.textColumn}>
-                          <h4>Pequeño negocio</h4>
+                          <h4>Small Business</h4>
                           <p>
-                            Empresas emergentes, comerciantes, empresas
-                            familiares y minoristas
+                            Startups, merchants, family businesses, and retailers
                           </p>
                         </div>
                       </div>
@@ -274,7 +272,7 @@ const Navbar: React.FC = () => {
                   isActive ? styles.navLinkActive : styles.navLink
                 }
               >
-                Precios
+                Prices
               </NavLink>
             </li>
 
@@ -282,7 +280,7 @@ const Navbar: React.FC = () => {
               className={styles.navItem}
               onClick={() => handleClick("recursos")}
             >
-              Recursos
+              Resources
               <span
                 className={`${styles.chevronIcon} ${
                   activeMenu === "recursos" ? styles.chevronUp : ""
@@ -301,8 +299,8 @@ const Navbar: React.FC = () => {
                           <i className="fa-solid fa-circle-info fa-lg"></i>
                         </div>
                         <div className={styles.textColumn}>
-                          <h4>Centro de ayuda</h4>
-                          <p>Guía y soporte para los productos de MEGA</p>
+                          <h4>Help Center</h4>
+                          <p>Guidance and support for MEGA products</p>
                         </div>
                       </div>
                       <div className={styles.menuItem}>
@@ -310,8 +308,8 @@ const Navbar: React.FC = () => {
                           <i className="fa-solid fa-message fa-lg"></i>
                         </div>
                         <div className={styles.textColumn}>
-                          <h4>Contáctanos</h4>
-                          <p>¿Tenés preguntas? Contáctanos</p>
+                          <h4>Contact Us</h4>
+                          <p>Have questions? Contact us</p>
                         </div>
                       </div>
                       <div className={styles.menuItem}>
@@ -320,7 +318,7 @@ const Navbar: React.FC = () => {
                         </div>
                         <div className={styles.textColumn}>
                           <h4>Blog</h4>
-                          <p>Las últimas noticias, consejos e ideas de MEGA</p>
+                          <p>The latest news, tips, and ideas from MEGA</p>
                         </div>
                       </div>
                       <div className={styles.menuItem}>
@@ -328,8 +326,8 @@ const Navbar: React.FC = () => {
                           <i className="fa-solid fa-shield fa-lg"></i>
                         </div>
                         <div className={styles.textColumn}>
-                          <h4>Programa de recompensas de vulnerabilidades</h4>
-                          <p>Conversaciones seguras y privadas</p>
+                          <h4>Vulnerability Rewards Program</h4>
+                          <p>Report a bug or problem</p>
                         </div>
                       </div>
 
@@ -338,10 +336,9 @@ const Navbar: React.FC = () => {
                           <i className="fa-solid fa-globe fa-lg"></i>
                         </div>
                         <div className={styles.textColumn}>
-                          <h4>Fiabilidad</h4>
+                          <h4>Reliability</h4>
                           <p>
-                            Descubre cómo mantenemos tus datos accesibles en
-                            cualquier momento y lugar
+                            Find out how we keep your data accesible anytime, anywhere
                           </p>
                         </div>
                       </div>
@@ -351,10 +348,9 @@ const Navbar: React.FC = () => {
                           <i className="fa-solid fa-code fa-lg"></i>
                         </div>
                         <div className={styles.textColumn}>
-                          <h4>Desarrolladores</h4>
+                          <h4>Developers</h4>
                           <p>
-                            Consulta nuestro código fuente y nuestro kit de
-                            desarrollo
+                            Check out our source code and software development kit
                           </p>
                         </div>
                       </div>
@@ -376,8 +372,8 @@ const Navbar: React.FC = () => {
               ></i>
             </div>
             <div className={styles.buttonContainer}>
-              <button className={styles.buttonLogin}>Iniciar sesión</button>
-              <button className={styles.buttonRegister}>Registrarse</button>
+              <button className={styles.buttonLogin}>Log in</button>
+              <button className={styles.buttonRegister}>Sign up</button>
             </div>
           </div>
         </div>

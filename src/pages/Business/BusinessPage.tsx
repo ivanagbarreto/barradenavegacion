@@ -4,7 +4,7 @@ import styles from "./BusinessPage.module.css";
 const BusinessPage = () => {
   return (
     <div className={styles.containerBusiness}>
-      <h2 className={styles.titleBusiness}>Esta es la página "Business"</h2>
+      <h2 className={styles.titleBusiness}>This is the Business Page</h2>
     </div>
   );
 };
