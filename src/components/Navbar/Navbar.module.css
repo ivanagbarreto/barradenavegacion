@@ -1,3 +1,8 @@
+.navContainer{
+  width: 100%;
+   
+}
+
 .navbar {
   position: fixed;
   display: flex;
@@ -15,12 +20,16 @@
   font-weight: bold;
   background-color: var(--base-color);
   color: var(--text-color);
-  border-bottom: 1px solid var(--line-color);
+ border-bottom: 1px solid var(--line-color);
   transition: background-color 0.5s ease, color 0.5s ease;
   white-space: nowrap;
   user-select: none;
 }
 
+.logoImg{
+  width: 32px;
+  height: 32px;
+}
 .navbarLogo {
   margin: 0;
   padding: 0;
