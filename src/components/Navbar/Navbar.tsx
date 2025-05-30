@@ -55,6 +55,7 @@ const Navbar: React.FC = () => {
   }, []);
   return (
     <>
+    <div className={styles.navbarContainer}>
       {!isMobileView && isDesktopMenuOpen && (
         <div
           className={styles.desktopOverlay}
@@ -414,6 +415,10 @@ const Navbar: React.FC = () => {
           </div>
         </div>
       </nav>
+
+</div>
+
+
     </>
   );
 };
